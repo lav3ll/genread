@@ -70,8 +70,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Where can the reader contact you about any questions?",
-    name: "questions",
+    message: "What is your email address?",
+    name: "email",
   },
   {
     type: "input",

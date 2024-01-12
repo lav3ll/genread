@@ -11,7 +11,7 @@ function generateMarkdown(data) {
     license,
     contributing,
     tests,
-    questions,
+    email,
     imgPath,
   } = data;
   return `# ${title}
@@ -30,9 +30,6 @@ function generateMarkdown(data) {
   
   ${installation}
   
-  [Click here to see live copy of the site](https://${gitUsername}.github.io/${repoName})
-  
-  [Link to ${repoName}](https://github.com/${gitUsername}/${repoName})
   
   ## Usage
   
@@ -50,7 +47,7 @@ function generateMarkdown(data) {
   
   ${tests}
   
-  ## Credits
+  ## Contributing
   
   ${contributing}
   
@@ -58,7 +55,11 @@ function generateMarkdown(data) {
   
   ${license}
 
-  contact ${questions} for any questions about ${title}.
+  ##Questions
+
+  [Link to ${repoName}](https://github.com/${gitUsername})
+
+  Pleae email ${email} for any questions about ${title}.
 
 `;
 }
