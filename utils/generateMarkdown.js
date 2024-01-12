@@ -28,13 +28,13 @@ function generateMarkdown(data) {
   
   [Click here to see live copy of the site](https://${gitUsername}.github.io/${repoName})
   
-  [Link to planisphere](https://github.com/${gitUsername}/${repoName})
+  [Link to ${repoName}](https://github.com/${gitUsername}/${repoName})
   
   ## Usage
   
   ${
     imgPath
-      ? `[Screenhot of the front page of planisphere](${imgPath})`
+      ? `[Screenhot of the front page of ${repoName}](${imgPath})`
       : `No image provided`
   }
   

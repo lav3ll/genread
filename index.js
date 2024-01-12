@@ -28,11 +28,6 @@ const questions = [
   },
   {
     type: "input",
-    message: "What steps are needed to install your repository if any?",
-    name: "installation",
-  },
-  {
-    type: "input",
     message: "What is the name of your repository",
     name: "repoName",
   },
@@ -94,7 +89,8 @@ function init() {
   inquirer
     .prompt(questions)
     .then((response) => {
-      generateMarkdown(response);
+      const markdownContent = generateMarkdown(response);
+      console.log(markdownContent);
     })
     .catch((error) => {
       console.error(error);
