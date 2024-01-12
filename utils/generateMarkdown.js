@@ -15,46 +15,27 @@ function generateMarkdown(data) {
     imgPath,
   } = data;
 
-  const badges = [
-    [
-      "mit",
-      "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-    ],
-    [
-      "apache-2.0",
+  const badges = {
+    mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+    "apache-2.0":
       "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-    ],
-    [
-      "gpl-3.0",
+    "gpl-3.0":
       "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
-    ],
-    [
-      "bsd-2-clause",
+    "bsd-2-clause":
       "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
-    ],
-    [
-      "mpl-2.0",
+    "mpl-2.0":
       "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
-    ],
-    [
-      "lgpl-3.0",
+    "lgpl-3.0":
       "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)",
-    ],
-    [
-      "agpl-3.0",
+    "agpl-3.0":
       "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)",
-    ],
-    [
-      "unlicense",
+    unlicense:
       "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
-    ],
-    [
-      "wtfpl",
+    wtfpl:
       "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)",
-    ],
-  ];
+  };
 
-  const licenseBade = badges[lincense];
+  const licenseBadge = badges[license];
 
   return `# ${title}
 
@@ -65,7 +46,7 @@ function generateMarkdown(data) {
   ${description}
 
 
-  ${licenseBade}
+  ${licenseBadge}
 
 
   ## Table of Contents
