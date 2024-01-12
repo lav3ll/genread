@@ -21,6 +21,10 @@ function generateMarkdown(data) {
   ## Description
   
   ${description}
+
+  ## Table of Contents
+
+  Installation | Key Features | Tests | Credits | License |Questions
   
   ## Installation
   
