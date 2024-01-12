@@ -1,5 +1,5 @@
 const fs = require("fs");
-const path = require("path");
+// const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -12,13 +12,34 @@ const questions = [
   },
   {
     type: "input",
+    message: "Very short description of your project",
+    name: "shortDescription",
+  },
+  {
+    type: "input",
     message: "What is the code in this repository about",
     name: "description",
+  },
+
+  {
+    type: "input",
+    message: "What steps are needed to install your repository if any?",
+    name: "installation",
   },
   {
     type: "input",
     message: "What steps are needed to install your repository if any?",
     name: "installation",
+  },
+  {
+    type: "input",
+    message: "What is the name of your repository",
+    name: "repoName",
+  },
+  {
+    type: "input",
+    message: "What is your git username?",
+    name: "gitUsername",
   },
   {
     type: "input",
@@ -56,6 +77,12 @@ const questions = [
     type: "input",
     message: "Where can the reader contact you about any questions?",
     name: "questions",
+  },
+  {
+    type: "input",
+    message:
+      "Please add a path to the screenshot of your application if you have one",
+    name: "imgPath",
   },
 ];
 
