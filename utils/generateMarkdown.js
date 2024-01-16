@@ -41,7 +41,7 @@ function generateMarkdown(data) {
 
   ${shortDescription}
   
-  ## Description
+  ## Description <a name="description"></a>
   
   ${description}
 
@@ -51,14 +51,20 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  Installation | Key Features | Tests | Credits | License |Questions
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
   
   ## Installation
   
   ${installation}
   
   
-  ## Usage
+  ## Usage <a name="usage"></a>
   
   ${
     imgPath
@@ -70,19 +76,19 @@ function generateMarkdown(data) {
   
   ${usage}
   
-  **Tests:**
+  ## Tests <a name="tests"></a>
   
   ${tests}
   
-  ## Contributing
+  ## Contribution <a name="contribution"></a>
   
   ${contributing}
   
-  ## License
+  ## License <a name="license"></a>
   
   ${license}
 
-  ##Questions
+  ## Questions <a name="questions"></a>
 
   [Link to ${repoName}](https://github.com/${gitUsername})
 
