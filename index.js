@@ -94,6 +94,7 @@ function init() {
     .prompt(questions)
     .then((response) => {
       const markdownContent = generateMarkdown(response);
+      //READ ME FILE HAS BEEN LABELLED TEST AS NOT TO OVER WRITE MY OWN
       writeToFile("testREADME.md", markdownContent);
     })
     .catch((error) => {

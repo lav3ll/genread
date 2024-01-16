@@ -18,7 +18,10 @@ npm i
 
 ## Usage
 
-![Screenhot of the front page of genread](./sc.png)
+Screenhot of the genread CLI
+![Screenhot of the genread CLI](./images/sc1.png)
+Screenhot of the generated README file
+![Screenhot of the generated README.md file](./images/sc2.png)
 
 **Key Features:**
 

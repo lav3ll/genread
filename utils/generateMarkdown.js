@@ -1,5 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  // Destructuring data object for easier access to data
   const {
     title,
     description,
@@ -15,6 +16,7 @@ function generateMarkdown(data) {
     imgPath,
   } = data;
 
+  // Badges for different licenses
   const badges = {
     mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     "apache-2.0":
@@ -35,8 +37,10 @@ function generateMarkdown(data) {
       "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)",
   };
 
+  // Retrieve the correct license badge based on the provided license
   const licenseBadge = badges[license];
 
+  // Generating the README content using template literals
   return `# ${title}
 
   ${shortDescription}
