@@ -72,7 +72,7 @@ function generateMarkdown(data) {
   
   ${
     imgPath
-      ? `[Screenhot of the front page of ${repoName}](${imgPath})`
+      ? `![Screenhot of the front page of ${repoName}](${imgPath})`
       : `No image provided`
   }
   

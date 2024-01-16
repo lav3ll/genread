@@ -12,9 +12,9 @@ To install **genread**, use the following command:
 
 npm i
 
-[Click here to see live copy of the site](https://lav3ll.github.io/genread)
+[Click here to see video of genread in action](https://drive.google.com/file/d/1TOTs1UigRqaaY2Apl4YebZO2zVZ5dRDf/view)
 
-[Link to genread](https://github.com/lav3ll/genread)
+[Link to genread repository](https://github.com/lav3ll/genread)
 
 ## Usage
 
